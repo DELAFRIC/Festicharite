@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Compte à rebours</title>
+
+</head>
+
+<body>
+    <div><img src="images/pp2.jpg" </div>
+    <div class="banniere">
+    <h1>Le Festivale de la charité, disponible dans:</h1>
+
+    <div id="countdown">
+    <script>
+        // Fonction pour mettre à jour le décompte
+        function updateCountdown() {
+            const now = new Date();
+            const targetDate = new Date("2023-09-05");
+            const timeDifference = targetDate - now;
+
+            // Convertir la différence en jours, heures, minutes et secondes
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            // Afficher le décompte dans l'élément avec l'id "countdown"
+            document.getElementById("countdown").innerHTML = `${days} jours, ${hours} heures, ${minutes} minutes, ${seconds} secondes`;
+
+            // Appeler à nouveau la fonction toutes les 1 seconde (1000 millisecondes)
+            setTimeout(updateCountdown, 1000);
+        }
+
+        // Appeler la fonction pour la première fois pour lancer le décompte
+        updateCountdown();
+    </script>
+    
+    </div>
+</body>
+
+</html>

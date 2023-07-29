@@ -1,0 +1,57 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-image: url(images/font1.jpg);
+    background-size: cover;
+    padding: 350px;
+    overflow: hidden; 
+    text-align: center;
+} 
+
+body div img{
+    width: 6%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 50%;
+
+
+}
+.banniere{
+    position:absolute;  
+    left:18rem;
+    top:250PX ;
+    width: 40%;
+    height: auto;
+    background: transparent;
+    border: 2px solid rgb(250, 237, 248);
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem); 
+}
+
+.banniere h1{
+    font-size: 3rem;
+    color: rgb(255, 8, 0);
+    font-weight: bold;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+#countdown{
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+/* display: flex;
+justify-content: center;
+align-items: center; */
